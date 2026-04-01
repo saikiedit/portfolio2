@@ -1001,6 +1001,7 @@
     /* Always show overlay + play btn on mobile (no hover) */
     .card-overlay { opacity: 1; }
     .play-btn {
+      display: flex;
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
     }
@@ -1198,20 +1199,20 @@
       onmouseleave="var v=this.querySelector('video');v.pause();v.currentTime=0;">
       <div class="card-thumb glass">
         <video src="u2u2uu2.mp4" muted loop playsinline
-          style="width:110%;height:100%;object-fit:cover;pointer-events:none;">
+          style="width:100%;height:100%;object-fit:cover;pointer-events:none;">
         </video>
         <div class="play-btn" onclick="var v=this.closest('.project-card').querySelector('video');v.paused?v.play():v.pause();">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
         </div>
         <div class="card-overlay">
           <div class="card-meta">
-            <div class="card-title">SaaS Promo</div>
+            <div class="card-title">SaaS promo</div>
             <span class="card-type">vpn</span>
           </div>
         </div>
       </div>
       <div class="card-info">
-        <h3>SaaS Promo</h3>
+        <h3>SaaS promo</h3>
         <p>NexusVPN · 2026</p>
       </div>
     </div>
